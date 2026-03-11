@@ -1,11 +1,15 @@
 {
   "photo": "assets/images/photo.png",
-  "heroBio": "**Senior Manager II, Software Engineer** at **Circana** with **17+ years** building and leading **mobile and hybrid applications**. I lead engineering teams to deliver **consumer intelligence and analytics** for global brands—from planning and architecture through to **Play Store and App Store** release. Passionate about **clean code**, **engineering discipline**, and **shipping on time**.",
-  "bio": "I'm a **Senior Manager II, Software Engineer** at **Circana**, where I lead and hands-on deliver **mobile and cross-platform solutions** that power **consumer intelligence and analytics** for global CPG, retail, and brand clients.\n\n**What I do:** I own the **full lifecycle**—from project initiation and planning through development, testing, and delivery. I drive **end-to-end delivery** of mobile applications and connected experiences using a broad technology stack: **native and cross-platform mobile** (React Native, Flutter, Kotlin, Swift), APIs, and cloud services. I've shipped products across multiple domains (**consumer insights**, **retail analytics**, field and internal tools) and use **industry-standard tools** every day: **Git**, **Scrum and Jira**, **build automation and CI/CD**, and **Play Store / App Store** release. I focus on **efficient team handling**, **clear processes**, and getting **quality software** into users' hands on time.\n\n**Why it matters:** At Circana, our work helps brands and retailers understand and act on **consumer behavior**. My focus is making that intelligence **accessible**, **reliable**, and **performant**—whether on phones, tablets, or internal dashboards. I care about **clean architecture**, **team growth**, and **shipping on time** without cutting corners on quality.\n\n**Beyond the day job:** I stay current with **mobile and platform trends** and enjoy turning **complex requirements** into **simple, scalable systems**. Open to connecting with folks in **mobile engineering**, **product**, and **consumer/retail tech**.",
+  "heroBio": "**Senior Manager II, Software Engineer** at **Circana** with **17+ years** building and leading **mobile and hybrid applications**. I lead engineering teams to deliver **consumer intelligence and analytics** for global brands—leveraging **Cursor for app infrastructure development** and architecture, **cloud platforms** for scale, an **in-house AI agent** for **data analytics and deep learning–driven reports**, and a **shared notification infrastructure** (FCM and internal server) used by multiple in-house apps. Passionate about **clean code**, **engineering discipline**, and **shipping on time**.",
+  "bio": "I'm a **Senior Manager II, Software Engineer** at **Circana**, where I lead and hands-on deliver **mobile and cross-platform solutions** that power **consumer intelligence and analytics** for global CPG, retail, and brand clients.\n\n**What I do:** I own the **full lifecycle**—from project initiation and planning through development, testing, and delivery. I **use Cursor to drive app infrastructure development**, testing flows, and architecture, and work with **cloud platforms** for scalable backends. I've built an **in-house AI agent** that handles **app data analytics with deep learning** and **manages reports**, and developed **notification infrastructure**—**Firebase Cloud Messaging (FCM)** and an **internal server**—as an **independent service** used by **multiple in-house apps** for notification needs. I drive **end-to-end delivery** of mobile applications using **native and cross-platform mobile** (React Native, Flutter, Kotlin, Swift), APIs, and **industry-standard tools**: **Git**, **Scrum and Jira**, **build automation and CI/CD**, and **Play Store / App Store** release. I focus on **efficient team handling**, **clear processes**, and getting **quality software** into users' hands on time.\n\n**Why it matters:** At Circana, our work helps brands and retailers understand and act on **consumer behavior**. My focus is making that intelligence **accessible**, **reliable**, and **performant**—whether on phones, tablets, or internal dashboards. I care about **clean architecture**, **team growth**, and **shipping on time** without cutting corners on quality.\n\n**Beyond the day job:** I stay current with **mobile and platform trends** and enjoy turning **complex requirements** into **simple, scalable systems**. Open to connecting with folks in **mobile engineering**, **product**, **consumer/retail tech**, and **AI/cloud infrastructure**.",
   "quickBits": [
     "B.E. in Computer Science & Engineering",
     "Senior Manager II, Software Engineer at Circana",
     "17+ years in mobile & hybrid development",
+    "Cursor for app infrastructure and architecture",
+    "In-house AI agent: data analytics, deep learning & reports",
+    "Notification infrastructure (FCM + internal server) for multiple apps",
+    "Cloud platforms for scalable infrastructure",
     "Avid learner",
     "Self-motivated",
     "Problem-solving"
@@ -17,7 +21,10 @@
     "Android (Java, Android Studio)",
     "Technical leadership & team management",
     "End-to-end product delivery",
-    "Brand strategy & statistics systems",
+    "Cursor · App infrastructure development and architecture",
+    "Cloud platforms (AWS, Azure) · Scalable & serverless architecture",
+    "In-house AI agent · Data analytics, deep learning & report management",
+    "Notification infrastructure · FCM & internal server (shared service for in-house apps)",
     "Spring / Spring Boot · Microservices",
     "Full-stack development",
     "Figma · Team handling"
@@ -37,7 +44,8 @@
     { "name": "Git", "icon": "git" },
     { "name": "Figma", "icon": "figma" },
     { "name": "VS Code", "icon": "vscode" },
-    { "name": "Docker", "icon": "docker" }
+    { "name": "Docker", "icon": "docker" },
+    { "name": "Firebase", "icon": "firebase" }
   ],
   "timeline": [
     { "year": "Dec 2024 – Present", "title": "Senior Manager II, Software Engineer", "note": "Circana" },
