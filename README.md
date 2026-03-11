@@ -62,8 +62,9 @@ Set `webDir` in `capacitor.config.ts` to `www` to match the Angular output path.
 - **`src/app/about/`** — About (bio, skills, experience).
 - **`src/app/contact/`** — Contact (heading, email, social links).
 - **`src/assets/data/`** — `site.json`, `about.json`, `experience.json`, `projects.json`, `testimonials.json`.
-- **`src/assets/images/`** — Add your profile photo as `photo.jpg` (see [sagarshah.dev](https://github.com/shahsagarm/sagarshah.dev)-style Hero and About).
+- **`src/assets/images/`** — Add your profile photo as `photo.jpg`
 
 ## Data
 
 Edit the JSON files in `src/assets/data/` to change copy, nav, projects, experience, and testimonials. Add your profile image at `src/assets/images/photo.jpg` (or update `about.photo` in `about.json` to match your file name).
+
