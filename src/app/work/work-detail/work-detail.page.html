@@ -1,0 +1,30 @@
+<ion-content>
+  <div class="page-content ion-padding" *ngIf="project">
+    <a routerLink="/work" (click)="goToWork($event)" class="back-link">
+      <ion-icon name="arrow-back"></ion-icon>
+      Work
+    </a>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>{{ project.year }} · {{ project.role }}</ion-card-subtitle>
+        <ion-card-title>{{ project.title }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p *ngIf="project.client" class="lead">{{ project.client }}</p>
+        <p>{{ project.description }}</p>
+        <p *ngIf="project.metrics" class="metrics">{{ project.metrics }}</p>
+        <div class="tags" *ngIf="project.tags?.length">
+          <ion-badge *ngFor="let t of project.tags" color="primary">{{ t }}</ion-badge>
+        </div>
+        <div class="links" *ngIf="project.linkLive || project.linkRepo">
+          <a *ngIf="project.linkLive" [href]="project.linkLive" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Live site</a>
+          <a *ngIf="project.linkRepo" [href]="project.linkRepo" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Repository</a>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="page-content ion-padding" *ngIf="notFound">
+    <h1>Project not found</h1>
+    <a routerLink="/work" (click)="goToWork($event)" class="btn btn-primary">Back to Work</a>
+  </div>
+</ion-content>

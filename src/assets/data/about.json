@@ -1,0 +1,53 @@
+{
+  "photo": "assets/images/photo.png",
+  "heroBio": "**Senior Manager II, Software Engineer** at **Circana** with **17+ years** building and leading **mobile and hybrid applications**. I lead engineering teams to deliver **consumer intelligence and analytics** for global brands—from planning and architecture through to **Play Store and App Store** release. Passionate about **clean code**, **engineering discipline**, and **shipping on time**.",
+  "bio": "I'm a **Senior Manager II, Software Engineer** at **Circana**, where I lead and hands-on deliver **mobile and cross-platform solutions** that power **consumer intelligence and analytics** for global CPG, retail, and brand clients.\n\n**What I do:** I own the **full lifecycle**—from project initiation and planning through development, testing, and delivery. I drive **end-to-end delivery** of mobile applications and connected experiences using a broad technology stack: **native and cross-platform mobile** (React Native, Flutter, Kotlin, Swift), APIs, and cloud services. I've shipped products across multiple domains (**consumer insights**, **retail analytics**, field and internal tools) and use **industry-standard tools** every day: **Git**, **Scrum and Jira**, **build automation and CI/CD**, and **Play Store / App Store** release. I focus on **efficient team handling**, **clear processes**, and getting **quality software** into users' hands on time.\n\n**Why it matters:** At Circana, our work helps brands and retailers understand and act on **consumer behavior**. My focus is making that intelligence **accessible**, **reliable**, and **performant**—whether on phones, tablets, or internal dashboards. I care about **clean architecture**, **team growth**, and **shipping on time** without cutting corners on quality.\n\n**Beyond the day job:** I stay current with **mobile and platform trends** and enjoy turning **complex requirements** into **simple, scalable systems**. Open to connecting with folks in **mobile engineering**, **product**, and **consumer/retail tech**.",
+  "quickBits": [
+    "B.E. in Computer Science & Engineering",
+    "Senior Manager II, Software Engineer at Circana",
+    "17+ years in mobile & hybrid development",
+    "Avid learner",
+    "Self-motivated",
+    "Problem-solving"
+  ],
+  "skills": [
+    "Mobile application development (Android, hybrid)",
+    "Ionic · Capacitor · Cordova",
+    "Angular · React / React Native",
+    "Android (Java, Android Studio)",
+    "Technical leadership & team management",
+    "End-to-end product delivery",
+    "Brand strategy & statistics systems",
+    "Spring / Spring Boot · Microservices",
+    "Full-stack development",
+    "Figma · Team handling"
+  ],
+  "techStack": [
+    { "name": "JavaScript", "icon": "js" },
+    { "name": "TypeScript", "icon": "ts" },
+    { "name": "Angular", "icon": "angular" },
+    { "name": "React", "icon": "react" },
+    { "name": "Node.js", "icon": "nodejs" },
+    { "name": "Java", "icon": "java" },
+    { "name": "Android", "icon": "android" },
+    { "name": "Kotlin", "icon": "kotlin" },
+    { "name": "HTML", "icon": "html" },
+    { "name": "CSS", "icon": "css" },
+    { "name": "Sass", "icon": "sass" },
+    { "name": "Git", "icon": "git" },
+    { "name": "Figma", "icon": "figma" },
+    { "name": "VS Code", "icon": "vscode" },
+    { "name": "Docker", "icon": "docker" }
+  ],
+  "timeline": [
+    { "year": "Dec 2024 – Present", "title": "Senior Manager II, Software Engineer", "note": "Circana" },
+    { "year": "Feb 2024 – Dec 2024", "title": "Technical Lead - Product Development/Factory Engineering", "note": "Circana" },
+    { "year": "Jan 2019 – Jan 2024", "title": "Technical Lead - Product Development", "note": "Harman Connected Services" },
+    { "year": "Aug 2014 – Dec 2018", "title": "Senior Software Engineer - Product Development", "note": "Harman Connected Services" },
+    { "year": "Jul 2013 – Jul 2014", "title": "Software Engineer", "note": "Nichepro Technologies" },
+    { "year": "Jun 2011 – Jul 2013", "title": "Software Engineer - Product Development", "note": "Symphony Teleca" },
+    { "year": "Jun 2010 – Jun 2011", "title": "Associate Software Engineer", "note": "Informacious Systems" },
+    { "year": "Nov 2009 – May 2010", "title": "Assistant Lecturer / Technical Trainer", "note": "Aditya College Of Technology & Science, Satna" },
+    { "year": "Aug 2007 – Jun 2008", "title": "Technical Support Engineer", "note": "Span Technologies, Satna" }
+  ]
+}

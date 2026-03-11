@@ -1,0 +1,38 @@
+<ion-content>
+  <div class="page-content ion-padding" *ngIf="about">
+    <div class="about-header" *ngIf="about.photo && showPhoto">
+      <img [src]="about.photo" alt="Profile photo" class="about-photo" (error)="showPhoto = false" />
+    </div>
+    <h1>About</h1>
+    <div class="bio" [innerHTML]="about.bio | highlightBold"></div>
+    <div class="quick-bits" *ngIf="about.quickBits?.length">
+      <ion-chip *ngFor="let q of about.quickBits" color="primary" [outline]="true">{{ q }}</ion-chip>
+    </div>
+    <a routerLink="/contact" (click)="goTo('/contact', $event)" class="btn btn-outline">Get in touch</a>
+
+    <section class="skills-section" *ngIf="about.skills?.length">
+      <h2>Skills</h2>
+      <div class="skills-tags">
+        <ion-chip *ngFor="let s of about?.skills" color="primary" [outline]="true">{{ s }}</ion-chip>
+      </div>
+    </section>
+
+    <section class="experience-section" *ngIf="experience.length">
+      <h2>Experience</h2>
+      <p class="section-lead">Technical leadership and delivery across mobile, hybrid, and consumer intelligence.</p>
+      <ion-list lines="full">
+        <ion-item *ngFor="let e of experience" detail="false" class="exp-item">
+          <ion-label>
+            <h3>{{ e.role }}</h3>
+            <p class="exp-meta">{{ e.company }} · {{ e.start }} – {{ e.end }}</p>
+            <p class="exp-location" *ngIf="e.location">{{ e.location }}</p>
+            <ul class="exp-highlights" *ngIf="e.highlights?.length">
+              <li *ngFor="let h of e.highlights">{{ h }}</li>
+            </ul>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </section>
+    <a routerLink="/work" (click)="goTo('/work', $event)" class="btn btn-outline btn-block">View work</a>
+  </div>
+</ion-content>

@@ -1,0 +1,124 @@
+// Hariom-style: distinctive typography, accent, tag cloud, cards
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+  --portfolio-font-heading: 'Instrument Serif', 'Georgia', serif;
+  --portfolio-font-body: 'DM Sans', system-ui, sans-serif;
+  --portfolio-body-size: 1rem;
+  --portfolio-line-height: 1.55;
+  --portfolio-scale: 1.2;
+  --portfolio-space: 0.5rem;
+  --portfolio-bg: #fafafa;
+  --portfolio-text: #1a1a1a;
+  --portfolio-muted: #555;
+  --portfolio-accent: #2563eb;
+  --portfolio-accent-dark: #1d4ed8;
+  --portfolio-border: #e5e5e5;
+  --portfolio-card-bg: #fff;
+  --portfolio-tag-bg: #f0f4f8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--portfolio-font-body);
+  font-size: var(--portfolio-body-size);
+  line-height: var(--portfolio-line-height);
+  color: var(--portfolio-text, #1a1a1a);
+  background: var(--portfolio-bg, #fafafa);
+}
+
+// Routed pages and their ion-content fill the main area
+app-root {
+  display: block;
+  height: 100%;
+}
+
+// Each page is a separate full-size view (no collision with other pages)
+app-home,
+app-work,
+app-about,
+app-contact,
+app-work-detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+app-home ion-content,
+app-work ion-content,
+app-about ion-content,
+app-contact ion-content,
+app-work-detail ion-content {
+  flex: 1;
+  min-height: 0;
+  display: block;
+}
+
+h1, .h1 {
+  font-family: var(--portfolio-font-heading);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+h2, .h2 {
+  font-family: var(--portfolio-font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+}
+
+h3, .h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  max-width: 65ch;
+}
+
+a {
+  color: var(--ion-color-primary, #2563eb);
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+.page-content {
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

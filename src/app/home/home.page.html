@@ -1,0 +1,161 @@
+<ion-content class="home-content figma-home">
+  <div class="page-content home-page" *ngIf="site">
+    <!-- Hero -->
+    <section class="hero figma-hero" id="hero">
+      <div class="hero-container">
+        <div class="hero-column hero-content-col">
+          <div class="hero-content">
+            <h1 class="hero-greeting">Hi, I'm {{ site.name.split(' ')[0] }} <span class="wave">👋</span></h1>
+            <p class="hero-tagline">{{ site.tagline }}</p>
+            <div class="hero-bio" *ngIf="about" [innerHTML]="(about.heroBio || about.bio) | highlightBold"></div>
+          </div>
+          <div class="hero-meta">
+            <p class="hero-location" *ngIf="site.location">
+              <ion-icon name="location-outline"></ion-icon>
+              {{ site.location }}
+            </p>
+            <div class="hero-available">
+              <span class="dot"></span>
+              <span>Available for new projects</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a [href]="site.cvUrl || ('mailto:' + site.contact.email)" [attr.download]="isCvDownload(site) ? (site.cvDownloadName || 'CV.pdf') : null" [target]="isCvExternal(site) ? '_blank' : '_self'" rel="noopener noreferrer" class="btn btn-primary">Download CV</a>
+            <a routerLink="/contact" (click)="goTo('/contact', $event)" class="btn btn-outline">Get in touch</a>
+          </div>
+          <div class="hero-social" *ngIf="site.social?.length">
+            <a *ngFor="let s of site.social" [href]="s.url" [attr.aria-label]="s.label" target="_blank" rel="noopener noreferrer" class="hero-social-link">{{ s.label }}</a>
+          </div>
+        </div>
+        <div class="hero-column hero-image-col" *ngIf="about?.photo && showHeroImage">
+          <div class="hero-pic-wrap">
+            <div class="hero-pic-bg"></div>
+            <div class="hero-pic-frame">
+              <img [src]="about?.photo" alt="{{ site.name }}" class="hero-image" (error)="onHeroImgError()" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="section-about" id="about" *ngIf="about">
+      <div class="section-container">
+        <div class="section-head">
+          <span class="pill">About me</span>
+          <h2 class="section-heading">Curious about me? Here you have it:</h2>
+        </div>
+        <div class="about-row">
+          <div class="about-image-col" *ngIf="about.photo">
+            <div class="about-pic-wrap">
+              <div class="about-pic-bg"></div>
+              <div class="about-pic-frame">
+                <img [src]="about.photo" [alt]="site.name" />
+              </div>
+            </div>
+          </div>
+          <div class="about-text-col">
+            <div class="about-bio" *ngIf="about.bio" [innerHTML]="about.bio | highlightBold"></div>
+            <p class="about-quick-title">Finally, some quick bits about me.</p>
+            <div class="quick-bits-grid" *ngIf="about.quickBits?.length">
+              <ul class="quick-bits-column" *ngFor="let col of quickBitsColumns">
+                <li *ngFor="let q of col">{{ q }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section-skills" id="skills" *ngIf="skillsForDisplay?.length">
+      <div class="section-container">
+        <div class="section-head">
+          <span class="pill">Skills</span>
+          <p class="section-subtitle">The skills, tools and technologies I am really good at:</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item" *ngFor="let item of skillsForDisplay">
+            <div class="skill-icon-wrap">
+              <img *ngIf="item.icon" [src]="'https://skillicons.dev/icons?i=' + item.icon + '&theme=light'" [alt]="item.name" class="skill-icon" loading="lazy" />
+              <span *ngIf="!item.icon" class="skill-icon skill-icon-placeholder">{{ item.name.charAt(0) }}</span>
+            </div>
+            <span class="skill-label">{{ item.name }}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section-work" id="work" *ngIf="featured.length">
+      <div class="section-container">
+        <div class="section-head">
+          <span class="pill">Work</span>
+          <p class="section-subtitle">Some of the noteworthy projects I have built:</p>
+        </div>
+        <div class="work-list">
+          <a *ngFor="let p of featured" [routerLink]="['/work', p.slug]" (click)="goToProject(p.slug, $event)" class="work-card-link">
+            <div class="work-card">
+              <div class="work-card-image">
+                <div class="work-card-image-placeholder"></div>
+              </div>
+              <div class="work-card-content">
+                <h3 class="work-card-title">{{ p.title }}</h3>
+                <p class="work-card-summary">{{ p.summary }}</p>
+                <div class="work-card-tags">
+                  <span class="tag" *ngFor="let t of p.tags">{{ t }}</span>
+                </div>
+                <span class="work-card-cta">View project →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a routerLink="/work" (click)="goTo('/work', $event)" class="btn btn-outline btn-see-all">See all projects</a>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-testimonials" id="testimonials" *ngIf="testimonials.length">
+      <div class="section-container">
+        <div class="section-head">
+          <span class="pill">Testimonials</span>
+          <p class="section-subtitle">Hear what people have to say about me.</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card" *ngFor="let t of testimonials">
+            <div class="testimonial-avatar">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+            <p class="testimonial-text">"{{ t.testimonial }}"</p>
+            <div class="testimonial-author">
+              <strong>{{ t.personName }}</strong>
+              <span class="testimonial-title">{{ t.personTitle }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section-contact" id="contact">
+      <div class="section-container">
+        <div class="section-head">
+          <span class="pill">Contact</span>
+          <h2 class="section-heading">{{ site.contact.heading }}</h2>
+        </div>
+        <div class="contact-block">
+          <div class="contact-info">
+            <a [href]="'mailto:' + site.contact.email" class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>{{ site.contact.email }}</span>
+            </a>
+          </div>
+          <p class="contact-sub">{{ site.contact.subheading }}</p>
+          <div class="contact-social" *ngIf="site.social?.length">
+            <a *ngFor="let s of site.social" [href]="s.url" [attr.aria-label]="s.label" target="_blank" rel="noopener noreferrer" class="contact-social-link">{{ s.label }}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</ion-content>

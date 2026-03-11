@@ -1,0 +1,19 @@
+<ion-content>
+  <div class="page-content ion-padding" *ngIf="site">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ site.contact.heading }}</ion-card-title>
+        <ion-card-subtitle>{{ site.contact.subheading }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="contact-email">
+          <a [href]="'mailto:' + site.contact.email" class="email-link">{{ site.contact.email }}</a>
+        </p>
+        <div class="social-links">
+          <a *ngFor="let s of site.social" [href]="s.url" [attr.aria-label]="s.label" target="_blank" rel="noopener noreferrer" class="social-link">{{ s.label }}</a>
+        </div>
+        <a routerLink="/work" (click)="goTo('/work', $event)" class="btn btn-outline btn-block">View work</a>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

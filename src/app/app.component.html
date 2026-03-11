@@ -1,0 +1,30 @@
+<ion-app class="app-shell">
+  <ng-container *ngIf="site">
+    <ion-header class="app-header figma-header">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <a routerLink="/home" (click)="navigate($event, '/home')" class="toolbar-logo" tabindex="0">&lt;PKA /&gt;</a>
+        </ion-buttons>
+        <ion-buttons slot="end" class="nav-buttons">
+          <a *ngFor="let item of site.nav" [routerLink]="item.path" (click)="navigate($event, item.path)" routerLinkActive="nav-active" [routerLinkActiveOptions]="item.path === '/work' ? { exact: false } : { exact: true }" class="nav-link">{{ item.label }}</a>
+          <a [href]="site.cvUrl || ('mailto:' + site.contact.email)" [attr.download]="isCvDownload(site) ? (site.cvDownloadName || 'CV.pdf') : null" [target]="isCvExternal(site) ? '_blank' : '_self'" rel="noopener noreferrer" class="btn-download-cv">Download CV</a>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <main class="app-main">
+      <ion-router-outlet></ion-router-outlet>
+    </main>
+
+    <ion-footer class="app-footer figma-footer">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <span class="footer-copyright">© {{ currentYear }} {{ site.name }} | All Rights Reserved.</span>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <a *ngFor="let s of site.social" [href]="s.url" [attr.aria-label]="s.label" target="_blank" rel="noopener noreferrer" class="footer-social-link">{{ s.label }}</a>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-footer>
+  </ng-container>
+</ion-app>

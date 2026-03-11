@@ -1,0 +1,30 @@
+{
+  "name": "Prashant Kumar Agrawal",
+  "tagline": "Senior Manager II, Software Engineer at Circana | Leading mobile engineering & cross-functional delivery for consumer intelligence & analytics",
+  "metaDescription": "Prashant Kumar Agrawal — Senior Manager II, Software Engineer at Circana. Mobile and cross-platform engineering, technical leadership, and end-to-end delivery for consumer intelligence and analytics. 17+ years in industry.",
+  "location": "Bengaluru, India",
+  "nav": [
+    { "label": "Home", "path": "/home" },
+    { "label": "About", "path": "/about" },
+    { "label": "Work", "path": "/work" },
+    { "label": "Testimonials", "path": "/home#testimonials" },
+    { "label": "Contact", "path": "/contact" }
+  ],
+  "social": [
+    { "id": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/pkagrawal17/" },
+    { "id": "github", "label": "GitHub", "url": "https://github.com/prashantagrawal17" },
+    { "id": "email", "label": "Email", "url": "mailto:prashantagrawal17@gmail.com" }
+  ],
+  "contact": {
+    "heading": "Don't be a stranger! Let's get in touch.",
+    "subheading": "Or drop me a line using this super nifty form.",
+    "email": "prashantagrawal17@gmail.com"
+  },
+  "cvUrl": "assets/cv_profile_prashant_.pdf",
+  "cvDownloadName": "Prashant_Kumar_Agrawal_CV.pdf",
+  "stats": {
+    "yearsExperience": 17,
+    "projects": 50,
+    "roles": 8
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t1",
+    "personName": "Sarah Mitchell",
+    "personTitle": "Product Director, Circana",
+    "personAvatar": "",
+    "testimonial": "Prashant led the mobile delivery for our consumer intelligence platform with clarity and ownership. He is very good at what he does—technical leadership, estimation, and on-time delivery. I would recommend him for any mobile or hybrid app initiative.",
+    "project": "Consumer intelligence mobile"
+  },
+  {
+    "id": "t2",
+    "personName": "James Chen",
+    "personTitle": "Engineering Manager, Harman Connected Services",
+    "personAvatar": "",
+    "testimonial": "Great technical lead. He took on complex Android and Ionic projects, mentored the team, and delivered consistently. His skills in hybrid apps and brand analytics systems are top-notch. A strong addition to any product engineering team.",
+    "project": "Brand strategy and statistics systems"
+  },
+  {
+    "id": "t3",
+    "personName": "Priya Sharma",
+    "personTitle": "Client Delivery Lead",
+    "personAvatar": "",
+    "testimonial": "Prashant was extremely easy to work with and truly cares about the project succeeding. He has deep knowledge in Ionic, Angular, and Android and delivered our enterprise app without issues. Highly recommended for mobile and hybrid development.",
+    "project": "Enterprise mobile apps"
+  }
+]

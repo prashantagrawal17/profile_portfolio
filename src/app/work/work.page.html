@@ -1,0 +1,23 @@
+<ion-content>
+  <div class="page-content work-page ion-padding">
+    <h1>Work</h1>
+    <p class="lead">Selected projects and deliveries across mobile, hybrid, and consumer intelligence.</p>
+    <div class="work-list">
+      <a *ngFor="let p of projects" [routerLink]="['/work', p.slug]" (click)="goToProject(p.slug, $event)" class="card-link">
+        <ion-card class="work-card">
+          <ion-card-header>
+            <ion-card-subtitle>{{ p.year }} · {{ p.role }}</ion-card-subtitle>
+            <ion-card-title>{{ p.title }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p class="card-summary">{{ p.summary }}</p>
+            <ion-badge *ngFor="let t of p.tags" color="primary" class="card-tag">{{ t }}</ion-badge>
+            <p *ngIf="p.metrics" class="card-metrics">{{ p.metrics }}</p>
+            <span class="card-cta">View project →</span>
+          </ion-card-content>
+        </ion-card>
+      </a>
+    </div>
+    <a routerLink="/contact" (click)="goTo('/contact', $event)" class="btn btn-outline btn-block">Get in touch</a>
+  </div>
+</ion-content>

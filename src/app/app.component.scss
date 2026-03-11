@@ -1,0 +1,177 @@
+// Layout: fixed header/footer; main content between them with top padding = header height
+ion-app.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  padding-top: var(--header-height, 56px);
+  padding-bottom: var(--footer-height, 48px);
+  box-sizing: border-box;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+  ion-toolbar {
+    --min-height: 56px;
+    --padding-start: 1rem;
+    --padding-end: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .app-header.figma-header ion-toolbar {
+    --padding-start: 5rem;
+    --padding-end: 5rem;
+  }
+}
+
+.app-main {
+  flex: 1 1 0;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  // Outlet: only the active route is shown (separate navigation view)
+  ion-router-outlet {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    position: relative;
+  }
+
+  ion-content {
+    flex: 1;
+    min-height: 0;
+  }
+}
+
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  flex-shrink: 0;
+
+  ion-toolbar {
+    --min-height: 48px;
+  }
+}
+
+.toolbar-logo {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: #111827;
+  font-size: 1.25rem;
+  padding: 0 4px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  margin: 0;
+  padding: 8px 0;
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    color: #111827;
+  }
+
+  &.nav-active {
+    color: var(--ion-color-primary);
+    font-weight: 600;
+  }
+}
+
+.btn-download-cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  background: #111827;
+  color: #f9fafb;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    opacity: 0.92;
+  }
+}
+
+.figma-footer {
+  ion-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --padding-start: 1rem;
+    --padding-end: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .figma-footer ion-toolbar {
+    --padding-start: 5rem;
+    --padding-end: 5rem;
+  }
+}
+
+ion-buttons[slot="start"] .footer-copyright,
+.footer-copyright {
+  margin: 0;
+  font-size: 14px;
+  color: #4b5563;
+  padding: 0 8px;
+}
+
+.footer-social-link {
+  margin-left: 8px;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    color: #111827;
+  }
+}
+
+.footer-link {
+  margin: 0 4px;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: var(--ion-color-medium-shade);
+  font-size: 13px;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--ion-color-primary);
+  }
+}

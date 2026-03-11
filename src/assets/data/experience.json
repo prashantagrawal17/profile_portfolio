@@ -1,0 +1,131 @@
+[
+  {
+    "company": "Circana",
+    "role": "Senior Manager II, Software Engineer",
+    "start": "December 2024",
+    "end": "Present",
+    "location": "Bengaluru, Karnataka, India",
+    "highlights": [
+      "Lead mobile and software engineering initiatives that support Circana's consumer intelligence and analytics offerings; own full lifecycle from project initiation and Scrum/Jira-driven planning through development, testing, build automation, and delivery—including Play Store and App Store releases.",
+      "Responsible for multiple client-facing and internal products, technology strategy, and team development; align engineering delivery with product and business goals through disciplined prioritization and clear communication.",
+      "Drive technology selection and architecture for cross-platform and native mobile (React Native, Flutter, Kotlin, Swift), ensuring scalability, performance, and maintainability.",
+      "Establish and enforce code versioning (Git), branching strategies, and code review practices; mentor engineers on quality, maintainability, and engineering discipline.",
+      "Define and drive testing practices: test case writing, test planning, and quality gates; reduce production issues and improve release confidence.",
+      "Implement build automation and CI/CD pipelines; own deployment strategies for staging and production and Play Store / App Store submission and account management.",
+      "Partner with product, design, and business to define roadmaps and prioritize features; collaborate with backend and platform teams on APIs and data pipelines.",
+      "Ship reliable, performant mobile experiences that handle large datasets and real-time analytics for enterprise users."
+    ]
+  },
+  {
+    "company": "Circana",
+    "role": "Technical Lead - Product Development/Factory Engineering",
+    "start": "February 2024",
+    "end": "December 2024",
+    "location": "Bengaluru, Karnataka, India",
+    "highlights": [
+      "Led mobile application development for Android (Java, Android Studio) and Android hybrid apps using Ionic, Angular, VS Code, Cordova (platform and plugin development).",
+      "Delivered brand strategy and statistics systems; handled team leadership and support across multiple organizational aspects.",
+      "Owned end-to-end mobile app development cycle with high- and low-level planning, client communication, and development management; ensured on-time product delivery."
+    ]
+  },
+  {
+    "company": "Harman Connected Services",
+    "role": "Technical Lead - Product Development",
+    "start": "January 2019",
+    "end": "January 2024",
+    "location": "Bengaluru, Karnataka, India",
+    "highlights": [
+      "Led mobile application development for Android (Java, Android Studio) and hybrid apps using Ionic, Angular, Visual Studio Code, and Cordova—including platform customization and plugin development for client-specific requirements.",
+      "Drove architecture and technology decisions for cross-platform and native Android delivery; ensured scalability, maintainability, and alignment with product and business goals.",
+      "Owned team handling, task allocation, and development management; coordinated with stakeholders and ensured high- and low-level planning was executed and communicated clearly.",
+      "Delivered brand strategy and statistics systems; supported multiple aspects of the organization including client delivery, internal tools, and cross-team dependencies.",
+      "Ensured on-time product delivery through sprint planning, code review, and quality checks; maintained client communication and managed expectations across multiple concurrent engagements.",
+      "Mentored engineers on Android and hybrid best practices; established reusable patterns and documentation for Cordova plugins and Ionic/Angular integration."
+    ]
+  },
+  {
+    "company": "Harman Connected Services",
+    "role": "Senior Software Engineer - Product Development",
+    "start": "August 2014",
+    "end": "December 2018",
+    "location": "Bengaluru, Karnataka, India",
+    "highlights": [
+      "Developed and maintained mobile applications for Android (Java, Android Studio) and Android hybrid apps using Ionic framework, Angular, and Cordova—including platform builds and custom plugin development.",
+      "Built brand strategy and statistics systems; implemented data flows, reporting, and analytics features used across multiple product lines and client engagements.",
+      "Supported team handling and delivery; participated in estimation, design reviews, and integration with backend services and APIs.",
+      "Contributed to end-to-end development cycle from requirements and design through implementation, testing, and release; helped establish consistent practices for hybrid app builds and store readiness.",
+      "Collaborated with product and QA to prioritize features and fix defects; ensured on-time delivery and stable releases for multiple concurrent projects.",
+      "Integrated third-party SDKs and native modules with Cordova; optimized performance and compatibility across Android versions and device profiles."
+    ]
+  },
+  {
+    "company": "Nichepro Technologies",
+    "role": "Software Engineer",
+    "start": "July 2013",
+    "end": "July 2014",
+    "location": "Bangalore",
+    "highlights": [
+      "Developed brand strategy and statistics systems; designed and built Android mobile applications using Android SDK, third-party libraries, and H2 database for Healthcare, M-Commerce, and Retail (PoS app) verticals.",
+      "Delivered end-to-end Android apps from requirements to release; implemented data models, UI, and integration with backend or local storage (H2) for multi-domain use cases.",
+      "Built Java Retail (Point of Sale) application using JavaFX SDK and Symmetric DB; implemented online/offline auto-synchronization to meet application and business requirements for field and store deployments.",
+      "Contributed to a short-term assignment on Java-based retail and synchronization logic; ensured alignment with project timelines and quality expectations.",
+      "Worked across multiple domains (Healthcare, M-Commerce, Retail) with clear requirements gathering, iterative development, and release cycles; coordinated with internal and client stakeholders."
+    ]
+  },
+  {
+    "company": "Symphony Teleca",
+    "role": "Software Engineer - Product Development",
+    "start": "June 2011",
+    "end": "July 2013",
+    "location": "Bangalore",
+    "highlights": [
+      "Developed mobile applications for Android (Android/Java SDK, hybrid with jQuery Mobile, Sencha Touch, JavaScript, PhoneGap, Eclipse IDE) and BlackBerry (HTML/CSS/jQuery Mobile, WebWorks SDK, BlackBerry SDK/CLI) for enterprise and consumer use cases.",
+      "Delivered brand strategy and statistics systems for multiple clients; implemented analytics, reporting, and data visualization features aligned with client and product goals.",
+      "Followed process, planning, and execution of the full development cycle within multi-level request/approval and organizational infrastructure; participated in design reviews, estimation, and release planning.",
+      "Shipped cross-platform solutions (Android and BlackBerry) with shared logic and platform-specific UI; maintained code quality and consistency across targets.",
+      "Collaborated with backend and design teams on API contracts and UX; integrated RESTful or custom endpoints and ensured offline-capable flows where required.",
+      "Learned and applied organizational development practices; contributed to documentation and knowledge sharing for hybrid and multi-platform delivery."
+    ]
+  },
+  {
+    "company": "Informacious Systems",
+    "role": "Associate Software Engineer",
+    "start": "June 2010",
+    "end": "June 2011",
+    "location": "Pune, India",
+    "highlights": [
+      "Developed mobile applications for Android (Java SDK), BlackBerry (HTML/CSS/jQuery Mobile, WebWorks SDK), J2ME (CLDC/MIDP stack, LWUIT kit), and Symbian (Carbide C++) for multiple client projects and use cases.",
+      "Delivered brand strategy and statistics systems for multiple clients in the organization; implemented data collection, reporting, and visualization features within platform constraints.",
+      "Contributed to requirements analysis, design, implementation, and testing across the full development lifecycle; worked with senior engineers and leads to meet delivery timelines.",
+      "Built and maintained platform-specific and shared components; ensured consistent behavior and data flow across Android, BlackBerry, J2ME, and Symbian builds.",
+      "Participated in code reviews and defect fixing; learned and applied best practices for performance, memory management, and store/submission readiness on each platform.",
+      "Gained hands-on experience with diverse toolchains (Eclipse, Carbide C++, platform SDKs) and deployment processes for consumer and enterprise mobile applications."
+    ]
+  },
+  {
+    "company": "Aditya College Of Technology & Science, Satna",
+    "role": "Assistant Lecturer / Technical Trainer",
+    "start": "November 2009",
+    "end": "May 2010",
+    "location": "Satna",
+    "highlights": [
+      "Worked as lecturer, mentor, and guide for students; delivered sessions on programming fundamentals, data structures, and implementation aspects aligned with the curriculum.",
+      "Strengthened students' programming concepts and implementation skills through hands-on exercises, assignments, and code walkthroughs.",
+      "Helped students achieve a better understanding of programming fundamentals and real-world application; provided one-on-one and group support for challenging topics.",
+      "Contributed to course material and assessment design; aligned delivery with academic goals and industry-relevant skills."
+    ]
+  },
+  {
+    "company": "Span Technologies",
+    "role": "Technical Support Engineer",
+    "start": "August 2007",
+    "end": "June 2008",
+    "location": "Satna, India",
+    "highlights": [
+      "Provided technical support to end users; diagnosed and resolved hardware, software, and network issues to minimize downtime and maintain productivity.",
+      "Managed network configuration, monitoring, and basic security; supported LAN/WAN connectivity and user access in line with organizational needs.",
+      "Handled installation and configuration management for software and systems; performed upgrades, patches, and routine maintenance as required.",
+      "Documented issues, resolutions, and procedures; contributed to knowledge base and handover for consistent support quality and onboarding of new users."
+    ]
+  }
+]
