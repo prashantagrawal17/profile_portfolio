@@ -33,6 +33,12 @@ npx ng build
 
 Production output is in **`www/`**. Deploy the contents of `www/` to any static host (e.g. Netlify, Vercel, GitHub Pages, Firebase Hosting). For SPA routing, configure the server to serve `index.html` for all routes (e.g. `rewrite * /index.html`).
 
+### GitHub Pages (this repo)
+
+The `www` folder is **not** committed; it is built on GitHub when you push. A workflow (`.github/workflows/deploy-gh-pages.yml`) runs on push to `main`: it runs `npm run build:gh-pages` and deploys the resulting `www/` so the site is live at **https://prashantagrawal17.github.io/profile_portfolio/**.
+
+**One-time:** In repo **Settings → Pages**, set **Source** to **GitHub Actions**. Then sync your code with `.\sync-to-github.ps1` so the workflow is in the repo.
+
 ## Capacitor (native apps)
 
 If you add or upgrade to Capacitor 8:
